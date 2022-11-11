@@ -12,3 +12,13 @@ for (int i = 0; i < array.Length; i++)
     array[i] = new Random(). Next(1, 10);
     Console.Write(array[i] + " , ");
 }
+
+double count = 0;
+for (int i = 0; i < array.Length; i++)
+{
+if ( array[i] % 2 != 0)
+{
+    count += array[i];
+}
+}
+Console.WriteLine($"Сумма нечетных чисел чисел = {count}");
